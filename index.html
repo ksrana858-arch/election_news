@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election News</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #f7c331, #1e3d59);
+            color: #fff;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #1e3d59;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 20px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f7c331;
+            color: #1e3d59;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .news-card {
+            background-color: #fff;
+            border-left: 5px solid #f7c331;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .news-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #1e3d59;
+        }
+
+        .news-card p {
+            margin-bottom: 10px;
+        }
+
+        .news-card img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e3d59;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav { flex-direction: column; }
+            nav a { margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Election News</h1>
+        <p>Your source for the latest election updates</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest</a>
+        <a href="#">Politics</a>
+        <a href="#">Results</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="news-card">
+            <h2>Breaking: Major Election Results Out</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Election results">
+            <p>Top parties have announced their victories across several constituencies. Stay tuned for detailed analysis and updates.</p>
+            <p><strong>Published:</strong> Feb 2, 2026</p>
+        </div>
+
+        <div class="news-card">
+            <h2>Party Leaders Address Public</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Political leaders">
+            <p>Key leaders spoke to the media regarding upcoming campaigns and strategies. Full coverage inside.</p>
+            <p><strong>Published:</strong> Feb 1, 2026</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Election News. All rights reserved.
+    </footer>
+</body>
+</html>
